@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('D:\Albert IT\html\Font\2\TTLakes-Bold.eot');
+    src: local('D:\Albert IT\html\Font\2\TT Lakes Bold'), local('TTLakes-Bold'),
+        url('D:\Albert IT\html\Font\2\TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('D:\Albert IT\html\Font\2\TTLakes-Bold.woff') format('woff'),
+        url('D:\Albert IT\html\Font\2\TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('D:\Albert IT\html\Font\2\TTLakes-Medium.eot');
+    src: local('D:\Albert IT\html\Font\2\TT Lakes Medium'), local('TTLakes-Medium'),
+        url('D:\Albert IT\html\Font\2\TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('D:\Albert IT\html\Font\2\TTLakes-Medium.woff') format('woff'),
+        url('D:\Albert IT\html\Font\2\TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('D:\Albert IT\html\Font\2\TTLakes-Regular.eot');
+    src: local('D:\Albert IT\html\Font\2\TT Lakes Regular'), local('TTLakes-Regular'),
+        url('D:\Albert IT\html\Font\2\TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('D:\Albert IT\html\Font\2\TTLakes-Regular.woff') format('woff'),
+        url('D:\Albert IT\html\Font\2\TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: fixed;
+    width: 320px;
+    height: 1024px;
+    margin: 0;
+    padding: 0;
+    font-family: 'TT Lakes';
+    box-shadow: 0px 0 50px 15px rgba(14, 24, 80, 0.2);
+}
+
+.navigation__topic {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.topic__item {
+    list-style-type: none;
+}
+
+.topic__item:first-child {
+    margin-top: 23px;
+    margin-left: 24px;
+    margin-bottom: 53px;
+}
+
+.topic__item:nth-child(2) {
+    margin-top: 18.73px;
+    margin-left: 16.73px;
+    margin-bottom: 46.27px;
+}
+
+.topic__item:last-child {
+    margin-top: 23px;
+    margin-left: 78.27px;
+    margin-bottom: 53px;
+    margin-right: 24px;
+}
+
+.topic__button {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.topic__button:hover {
+    box-shadow: 0 0 3px 3px rgba(126, 126, 130, 0.5);
+    transition: opacity 0.3s, transform 0.3s;
+    border-radius: 100%;
+}
+
+.list-href {
+    color: rgba(27, 28, 33, 1);
+    text-decoration: none;
+    height: 24px;
+    padding-top: 4px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.list-href::before {
+    position: absolute;
+    content: "";
+    border-left: 4px solid rgba(65, 246, 215, 1);
+    font-size: 16px;
+    color: rgba(126, 126, 130, 1);
+    transition: opacity 0.3s, transform 0.3s;
+    height: 32px;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    transform: rotate(180deg);
+    opacity: 0;
+}
+
+.list-href:hover::before {
+    opacity: 1;
+}
+
+.list-href:hover {
+    font-size: 16px;
+    color: rgba(126, 126, 130, 1);
+    transition: opacity 0.3s, transform 0.3s;
+    display: flex;
+}
+
+.page__nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 16px;
+    margin-top: 0;
+    padding: 0;
+}
+
+.list-item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.container {
+    margin-top: 268px;
+}
+
+.container__nav {
+    margin-left: 24px;
+    margin-right: 100px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+.address-list {
+    list-style-type: none;
+    margin-bottom: 40px;
+    margin-left: 24px;
+    padding: 0;
+    line-height: 24px;
+}
+
+.address-item {
+    list-style-type: none;
+}
+
+.address-href:hover {
+    color: rgba(126, 126, 130, 1);
+    cursor: pointer;
+}
+
+.address-item:last-child {
+    margin-top: 12px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.main__lang {
+    display: flex;
+    flex-direction: row;
+    margin-left: 24px;
+    gap: 7px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.lang-language:hover {
+    color: rgba(126, 126, 130, 1);
+    cursor: pointer;
+}
+
+.address-href {
+    text-decoration: none;
+    color: rgba(27, 28, 33, 1);
+}
