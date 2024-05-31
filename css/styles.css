@@ -31,15 +31,18 @@
     font-style: normal;
 }
 
-body {
-    position: fixed;
+.window {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 320px;
-    height: 1024px;
     margin: 0;
     padding: 0;
     font-family: 'TT Lakes';
     box-shadow: 0px 0 50px 15px rgba(14, 24, 80, 0.2);
+    overflow-y: scroll;
 }
+
 
 .navigation__topic {
     display: flex;
@@ -84,7 +87,7 @@ body {
     border-radius: 100%;
 }
 
-.list-href {
+.list__href {
     color: rgba(27, 28, 33, 1);
     text-decoration: none;
     height: 24px;
@@ -93,7 +96,7 @@ body {
     position: relative;
 }
 
-.list-href::before {
+.list__href::before {
     position: absolute;
     content: "";
     border-left: 4px solid rgba(65, 246, 215, 1);
@@ -109,18 +112,18 @@ body {
     opacity: 0;
 }
 
-.list-href:hover::before {
+.list__href:hover::before {
     opacity: 1;
 }
 
-.list-href:hover {
+.list__href:hover {
     font-size: 16px;
     color: rgba(126, 126, 130, 1);
     transition: opacity 0.3s, transform 0.3s;
     display: flex;
 }
 
-.page__nav__list {
+.nav__list {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -129,7 +132,7 @@ body {
     padding: 0;
 }
 
-.list-item {
+.list__item {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -168,22 +171,29 @@ body {
     line-height: 24px;
 }
 
-.address-item {
-    list-style-type: none;
+.address__href {
+    text-decoration: none;
+    color: rgba(27, 28, 33, 1);
 }
 
-.address-href:hover {
+.address__href:hover {
     color: rgba(126, 126, 130, 1);
     cursor: pointer;
 }
 
-.address-item:last-child {
+.address__href:first-child {
+    display: block;
+    margin-top: 16px;
+}
+
+.address__href:last-child {
+    display: block;
     margin-top: 12px;
     font-size: 24px;
     line-height: 32px;
 }
 
-.main__lang {
+.footer__lang {
     display: flex;
     flex-direction: row;
     margin-left: 24px;
@@ -192,12 +202,7 @@ body {
     padding: 0;
 }
 
-.lang-language:hover {
+.lang__language:hover {
     color: rgba(126, 126, 130, 1);
     cursor: pointer;
-}
-
-.address-href {
-    text-decoration: none;
-    color: rgba(27, 28, 33, 1);
 }
